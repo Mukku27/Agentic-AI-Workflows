@@ -6,6 +6,10 @@ import nest_asyncio
 from openai import AsyncOpenAI
 from pydantic import BaseModel, Field
 
+from dotenv import load_dotenv
+# Load environment variables from a .env file
+load_dotenv()
+
 nest_asyncio.apply()
 
 # Set up logging configuration
