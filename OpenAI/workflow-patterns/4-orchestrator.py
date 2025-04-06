@@ -4,6 +4,10 @@ from openai import OpenAI
 import os
 import logging
 
+from dotenv import load_dotenv
+# Load environment variables from a .env file
+load_dotenv()
+
 # Set up logging configuration
 logging.basicConfig(
     level=logging.INFO,
