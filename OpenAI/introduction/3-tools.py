@@ -4,6 +4,9 @@ import os
 import requests
 from openai import OpenAI
 from pydantic import BaseModel, Field
+from dotenv import load_dotenv
+# Load environment variables from a .env file
+load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
